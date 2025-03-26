@@ -1,0 +1,35 @@
+/* NotFound.css */
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  .container1 h2 {
+    font-size: 2rem;
+    color: #e74c3c; /* Rouge pour attirer l'attention */
+    margin-bottom: 20px;
+  }
+  
+  .container1 a {
+    text-decoration: none;
+    color: #3498db; /* Bleu pour le lien */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .container1 a:hover {
+    background-color: #3498db;
+    color: white;
+    border-color: #2980b9;
+  }
+  

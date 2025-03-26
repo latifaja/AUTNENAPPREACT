@@ -1,0 +1,130 @@
+
+
+  
+  .home-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+  }
+  
+  .sidebar {
+    width: 250px; 
+    background-color: #0670db; 
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; 
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    flex: 1; 
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #004080; 
+  }
+  
+  .sidebar ul li a.active {
+    background-color: #0059b3; 
+    color: #fff !important;
+    font-weight: bold; 
+  }
+  
+  .sidebar ul li a .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  
+  .sign-out-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6f94f9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .sign-out-button:hover {
+    background-color: #6f8cdc;
+  }
+  
+
+  .main-content {
+    flex: 1; 
+    padding: 20px;
+    background-color: #f8f9fa;
+    overflow-y: auto; 
+    min-height: 100vh; 
+  }
+  
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+  }
+  
+  
+  .main-content button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .main-content button:hover {
+    background-color: #218838;
+  }
+  
+  
+.sidebar .icon {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar .icon:hover {
+  cursor: pointer;
+  color: #007bff; /* Change color on hover */
+}
+li:hover{
+  cursor: pointer;
+  color: #273544;
+}
