@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# React Authentication App with JSON Server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Cette application web permet la gestion de l'authentification des utilisateurs en utilisant React.js pour le frontend et JSON Server pour simuler une API REST.
+Les principales fonctionnalités incluent :
+- Inscription (Signup)
+- Connexion (Login)
+- Déconnexion (Logout)
+- Redirection automatique vers la page de connexion pour les utilisateurs non authentifiés
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+### Page de Connexion
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Login Page](screenshots/loginreact.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Page d'Inscription
 
-### `npm test`
+![Inscription Page](screenshots/registerreact.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Page d'Accueil
 
-### `npm run build`
+![acceuil Page](screenshots/dashreact.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Page d'Accueil
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![upload Page](screenshots/uploadreact.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Technologies Utilisées
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React.js
+- React Router
+- JSON Server
+- Axios (pour les requêtes API)
+- CSS pour le style
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation et Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prérequis
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js et npm installés sur votre machine
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Cloner le projet**
+   ```bash
+   git clone https://github.com/votre-repository.git
+   cd votre-repository
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+3. **Configurer JSON Server**
+   - Créez un fichier `db.json` à la racine du projet avec le contenu suivant :
+     ```json
+     {
+       "users": []
+     }
+     ```
+   - Lancer le serveur JSON Server :
+     ```bash
+     npx json-server --watch db.json --port 3000
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Démarrer l'application React**
+   ```bash
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+## Fonctionnalités
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Inscription** : Un utilisateur peut s'inscrire en renseignant son email et mot de passe, qui seront stockés dans `db.json`.
+- **Connexion** : Un utilisateur peut se connecter en validant ses informations contre celles stockées dans `db.json`.
+- **Déconnexion** : L'utilisateur peut se déconnecter et sera redirigé vers la page de connexion.
+- **Gestion de l'accès aux pages protégées** : Les utilisateurs non authentifiés sont automatiquement redirigés vers la page de connexion.
 
-### Making a Progressive Web App
+## Améliorations Futures
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Sécuriser les mots de passe avec le hachage
+- Implémenter un backend réel avec une base de données
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
